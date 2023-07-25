@@ -1,0 +1,26 @@
+/* Estilo general para ajustar mi tabla */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #999999;
+}
+
+/* Div cuadrados */
+#contenedor {
+    margin: 8%;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cuadrado {
+    width: 26px;
+    height: 26px;
+    background-color: #FFFFFF;
+    flex-grow: 1;
+    flex-basis: 1;
+}
