@@ -6,6 +6,11 @@ body {
     box-sizing: border-box;
 }
 
+/* Estilo de mouse */
+.estado {
+    background-color: #2B2C2D;
+}
+
 /* Div cuadrados */
 #contenedor {
     height: 100vh;
@@ -82,4 +87,20 @@ button {
     font-size: medium;
     font-weight: bold;
     font-family: sans-serif;
+}
+
+/* Estilo de slider */
+#tamaño {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+input {
+    order: 1;
+}
+
+.tamañoNuevo {
+    align-self: center;
+    order: 1;
 }
