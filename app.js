@@ -88,3 +88,20 @@ for (let i = 1; i <= 256; i++) {
         });
     });
 }
+
+// Cambio de tamaño
+size.addEventListener("change", (e) => {
+    const eliminar = document.getElementsByClassName("cuadrado");
+    while (eliminar[0]){
+        eliminar[0].remove();
+    }
+
+    activarNegro.style.backgroundColor = "#FFFFFF";
+    aleatorios.style.backgroundColor = "#FFFFFF";
+    borrador.style.backgroundColor = "#FFFFFF";
+    borrar.style.backgroundColor = "#FFFFFF";
+    tam = e.target.value;
+    
+    valor.innerText = tam.toString() + " X " + tam.toString();
+    contenedorTam.appendChild(valor);
+});
