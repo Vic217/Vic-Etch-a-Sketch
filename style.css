@@ -6,6 +6,19 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    align-self: auto;
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 28px;
+    align-self: center;
+}
+
 /* Estilo de mouse */
 .estado {
     background-color: #2B2C2D;
