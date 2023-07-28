@@ -21,7 +21,7 @@ const valor = document.createElement("p");
     valor.classList.add("tamañoNuevo");
     valor.innerText = "30 X 30";
     contenedorTam.appendChild(valor);
-    
+
 // Creacion de primer pizarra
 for (let i = 1; i <= 256; i++) {
     const cuadrado = document.createElement("div");
@@ -62,6 +62,29 @@ for (let i = 1; i <= 256; i++) {
             g = Math.floor(Math.random() * 256);
             b = Math.floor(Math.random() * 256);
             e.target.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+        });
+    });
+
+    // Eleccion de borrador
+    borrador.addEventListener("click", (e) => {
+        e.target.style.backgroundColor = "#2C2B2B";
+        activarNegro.style.backgroundColor = "#FFFFFF";
+        aleatorios.style.backgroundColor = "#FFFFFF";
+        borrar.style.backgroundColor = "#FFFFFF"
+        cuadrado.addEventListener(accion, (e) => {
+            e.target.style.backgroundColor = "#FFFFFF";
+        });
+    });
+
+    // Borrar Todo
+    borrar.addEventListener("click", (e) => {
+        cuadrado.style.backgroundColor = "#FFFFFF";
+        activarNegro.style.backgroundColor = "#FFFFFF";
+        aleatorios.style.backgroundColor = "#FFFFFF";
+        borrador.style.backgroundColor = "#FFFFFF";
+        e.target.style.backgroundColor = "#2C2B2B";
+        cuadrado.addEventListener(accion, (e) => {
+            e.target.style.backgroundColor = "#FFFFFF";
         });
     });
 }
