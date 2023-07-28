@@ -38,3 +38,48 @@ body {
 .cuadrado {
     background-color: #FFFFFF;
 }
+
+/* Estilos de botones */
+button {
+    border-radius: 5%;
+}
+
+#botones {
+    margin-left: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+#negro {
+    border: solid 3px black;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#aleatorio {
+    border: solid 3px blueviolet;
+    color: blueviolet;
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#borrador {
+    border: solid 3px rgb(107, 159, 163);
+    color: rgb(107, 159, 163);
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#borrar {
+    border: solid 3px rgb(0, 18, 122);
+    color: rgb(0, 18, 122);
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+}
