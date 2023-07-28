@@ -36,9 +36,5 @@ body {
 }
 
 .cuadrado {
-    width: 26px;
-    height: 26px;
     background-color: #FFFFFF;
-    flex-grow: 1;
-    flex-basis: 1;
 }
