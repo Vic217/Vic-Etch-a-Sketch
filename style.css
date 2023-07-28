@@ -17,6 +17,14 @@ body {
     gap: 42px;
 }
 
+#centro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .cuadrado {
     width: 26px;
     height: 26px;
