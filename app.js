@@ -16,6 +16,12 @@ let r = 0;
 let g = 0;
 let b = 0;
 
+// Tamaño por defecto
+const valor = document.createElement("p");
+    valor.classList.add("tamañoNuevo");
+    valor.innerText = "30 X 30";
+    contenedorTam.appendChild(valor);
+    
 // Creacion de primer pizarra
 for (let i = 1; i <= 256; i++) {
     const cuadrado = document.createElement("div");
