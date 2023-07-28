@@ -19,11 +19,6 @@ p {
     align-self: center;
 }
 
-/* Estilo de mouse */
-.estado {
-    background-color: #2B2C2D;
-}
-
 /* Div cuadrados */
 #contenedor {
     height: 100vh;
@@ -116,4 +111,9 @@ input {
 .tamañoNuevo {
     align-self: center;
     order: 1;
+}
+
+/* Estilo de mouse */
+.estado {
+    background-color: #2B2C2D;
 }
