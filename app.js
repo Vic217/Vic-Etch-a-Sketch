@@ -7,6 +7,15 @@ const borrador = document.getElementById("borrador");
 const size = document.getElementById("slider");
 const contenedorTam = document.getElementById("tamaño");
 
+// Variables para trabajar en las funciones
+let tam = 1;
+let accion = "mouseover";
+
+// Valores iniciales de colores
+let r = 0;
+let g = 0;
+let b = 0;
+
 // Creacion de primer pizarra
 for (let i = 1; i <= 256; i++) {
     const cuadrado = document.createElement("div");
