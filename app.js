@@ -104,4 +104,71 @@ size.addEventListener("change", (e) => {
     
     valor.innerText = tam.toString() + " X " + tam.toString();
     contenedorTam.appendChild(valor);
+
+    // Ciclo para obtener las nuevas pizarras
+    for (let i = 1; i <= tam * tam; i++) {
+        const cuadrado = document.createElement("div");
+        cuadrado.classList.add("cuadrado");
+        cuadrado.style.width = (480 / tam) + "px";
+        cuadrado.style.height = (480 / tam) + "px";
+        contenedor.appendChild(cuadrado);
+
+        // Seguimiento del mouse
+        cuadrado.addEventListener("mouseenter", (e) => {
+            cuadrado.classList.add("estado");
+        });
+
+        // Elimina el seguimiento
+        cuadrado.addEventListener("mouseout", (e) => {
+            cuadrado.classList.remove("estado");
+        });
+
+        // Eleccion de color negro
+        activarNegro.addEventListener("click", (e) => {
+            e.target.style.backgroundColor = "#2C2B2B";
+            aleatorios.style.backgroundColor = "#FFFFFF";
+            borrador.style.backgroundColor = "#FFFFFF";
+            borrar.style.backgroundColor = "#FFFFFF";
+            cuadrado.addEventListener(accion, (e) => {
+                e.target.style.backgroundColor = "#000000";
+            });
+        });
+
+        // Eleccion de colores aleatorios
+        aleatorios.addEventListener("click", (e) => {
+            e.target.style.backgroundColor = "#2C2B2B";
+            activarNegro.style.backgroundColor = "#FFFFFF";
+            borrador.style.background = "#FFFFFF";
+            borrar.style.backgroundColor = "#FFFFFF";
+            cuadrado.addEventListener(accion, (e) => {
+                r = Math.floor(Math.random() * 256);
+                g = Math.floor(Math.random() * 256);
+                b = Math.floor(Math.random() * 256);
+                e.target.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+            });
+        });
+
+        // Eleccion de borrador
+        borrador.addEventListener("click", (e) => {
+            e.target.style.backgroundColor = "#2C2B2B";
+            activarNegro.style.backgroundColor = "#FFFFFF";
+            aleatorios.style.backgroundColor = "#FFFFFF";
+            borrar.style.backgroundColor = "#FFFFFF"
+            cuadrado.addEventListener(accion, (e) => {
+                e.target.style.backgroundColor = "#FFFFFF";
+            });
+        });
+
+        // Borrar Todo
+        borrar.addEventListener("click", (e) => {
+            cuadrado.style.backgroundColor = "#FFFFFF";
+            activarNegro.style.backgroundColor = "#FFFFFF";
+            aleatorios.style.backgroundColor = "#FFFFFF";
+            borrador.style.backgroundColor = "#FFFFFF";
+            e.target.style.backgroundColor = "#2C2B2B";
+            cuadrado.addEventListener(accion, (e) => {
+                e.target.style.backgroundColor = "#FFFFFF";
+            });
+        });
+    }
 });
