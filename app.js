@@ -35,4 +35,18 @@ for (let i = 1; i <= 256; i++) {
             e.target.style.backgroundColor = "#000000";
         });
     });
+
+    // Eleccion de colores aleatorios
+    aleatorios.addEventListener("click", (e) => {
+        e.target.style.backgroundColor = "#2C2B2B";
+        activarNegro.style.backgroundColor = "#FFFFFF";
+        borrador.style.background = "#FFFFFF";
+        borrar.style.backgroundColor = "#FFFFFF";
+        cuadrado.addEventListener(accion, (e) => {
+            r = Math.floor(Math.random() * 256);
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            e.target.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+        });
+    });
 }
