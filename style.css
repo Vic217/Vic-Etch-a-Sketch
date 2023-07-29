@@ -53,16 +53,20 @@ p {
 }
 
 footer {
-    margin: 0;
     display: flex;
 }
 
+footer > p {
+    margin: 0;
+    font-size: 26px;
+}
+
 img {
-    margin-left: 12px;
+    margin-left: 10px;
 }
 
 a {
-    margin-top: 28px;
+    margin-top: 6px;
     font-size: 26px;
     color: #0b0c0c;
     text-decoration: none;

@@ -105,7 +105,7 @@ size.addEventListener("change", (e) => {
     valor.innerText = tam.toString() + " X " + tam.toString();
     contenedorTam.appendChild(valor);
 
-    // Ciclo para obtener las nuevas pizarras
+    // Ciclo para obtener las nuevas
     for (let i = 1; i <= tam * tam; i++) {
         const cuadrado = document.createElement("div");
         cuadrado.classList.add("cuadrado");
