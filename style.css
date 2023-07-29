@@ -41,7 +41,7 @@ p {
 #pizarra {
     height: 480px;
     width: 480px;
-    margin-bottom: 22px;
+    margin-bottom: 2px;
     display: flex;
     flex-wrap: wrap;
     border: solid #077E13 8px;
@@ -50,6 +50,22 @@ p {
 
 .cuadrado {
     background-color: #FFFFFF;
+}
+
+footer {
+    margin: 0;
+    display: flex;
+}
+
+img {
+    margin-left: 12px;
+}
+
+a {
+    margin-top: 28px;
+    font-size: 26px;
+    color: #0b0c0c;
+    text-decoration: none;
 }
 
 /* Estilos de botones */
